@@ -5,10 +5,11 @@ import App from '../../App';
 import { PlantSelect } from '../pages/PlantSelect';
 import { MaterialIcons } from '@expo/vector-icons';
 import { MyPlants } from '../pages/MyPlants';
+import { Platform } from 'react-native';
 
 const AppTab = createBottomTabNavigator();
 
-const AuthRoutes = () => {
+const AuthRoutes: React.FC = () => {
   return (
     <AppTab.Navigator
       tabBarOptions={{
@@ -16,8 +17,8 @@ const AuthRoutes = () => {
         inactiveTintColor: colors.heading,
         labelPosition: 'beside-icon',
         style: {
-          paddingVertical: 20,
-          height: 88
+          paddingVertical: Platform.OS === 'ios' ? 20 : 0,
+          height: 60
         },
       }}>
       <AppTab.Screen
