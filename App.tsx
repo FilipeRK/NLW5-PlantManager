@@ -3,8 +3,8 @@ import AppLoading from 'expo-app-loading';
 import { useFonts, Jost_400Regular, Jost_600SemiBold } from '@expo-google-fonts/jost';
 import Routes from './src/routes';
 
-//rodar: json-server ./src/services/server.json --host 192.168.0.116 --port 3333 
-//para que a fakeAPI esteja acessível
+//executar: json-server ./src/services/server.json --host 192.168.0.116 --port 3333 //para que a fakeAPI esteja acessível
+//executar: expo start
 
 export default function App() {
   const [fontsLoaded] = useFonts({
