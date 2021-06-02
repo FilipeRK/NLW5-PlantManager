@@ -36,13 +36,13 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 # Clone este repositório.
 $ git clone https://github.com/FilipeRK/NLW5-PlantManager.git
 
-# Vá para a pasta plantmanager-nlw05
+# Vá para a pasta NLW5-PlantManager
 $ cd NLW5-PlantManager
 
 # Instale as dependências
 $ yarn install 
 
-# Execute o json server com as informações
+# Execute o json server
 $ json-server ./src/services/server.json --host 192.168.10.100 --port 3333 //Troca o IP 192.168.10.100 para o IP do seu computador
 
 # Execute aplicação
