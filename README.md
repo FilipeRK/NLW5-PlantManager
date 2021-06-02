@@ -42,8 +42,11 @@ $ cd NLW5-PlantManager
 # Instale as dependências
 $ yarn install 
 
+# Execute o json server com as informações
+$ json-server ./src/services/server.json --host 192.168.10.100 --port 3333 //Troca o IP 192.168.10.100 para o IP do seu computador
+
 # Execute aplicação
-$ yarn start
+$ expo start
 
 # Leia o Código QR com Expo Client que você baixou no seu dispositivo, não se esqueça de colocar o seu endereço ip lan no diretório ./src/services/api na baseURL.
 ```
